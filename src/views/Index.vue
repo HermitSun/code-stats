@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <Music></Music>
     <transition name="fade">
       <swiper id="swiperBox"
               :options="swiperOption"
@@ -35,10 +36,11 @@
   import Statistics from '@/components/Statistics'
   import LongestClass from '@/components/LongestClass'
   import Difficulties from '@/components/Difficulties'
+  import Music from '@/components/Music'
 
   export default {
     name: 'Index',
-    components: { Difficulties, LongestClass, Statistics, BriefInfo },
+    components: { Music, Difficulties, LongestClass, Statistics, BriefInfo },
     data () {
       return {
         swiperOption: {
