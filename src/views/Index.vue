@@ -109,9 +109,9 @@
     height: 100px;
   }
 
-  .swiper-slide1 {
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-  }
+  /*.swiper-slide1 {*/
+  /*  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);*/
+  /*}*/
 
   .swiper-slide2 {
     background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);

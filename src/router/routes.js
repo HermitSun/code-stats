@@ -2,7 +2,10 @@ export default [
   {
     path: '/',
     name: '首页',
-    component: () => import('@/views/Index.vue')
+    component: () => import('@/views/Index.vue'),
+    meta: {
+      title: 'SEEC数据统计'
+    }
   },
   {
     path: '/404',
