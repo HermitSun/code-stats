@@ -1,9 +1,9 @@
 <template>
-  <div class="audio-wrapper">
+  <div class="audio-wrapper"
+       style="z-index: 9999">
     <div :class="isPlay ? 'btn-audio-play' : 'btn-audio-pause'"
          @click="handleAudioPlay">
       <audio :src="require('assets/music/bach.mp3')"
-             autoplay
              loop
              id="music">
       </audio>
@@ -16,7 +16,7 @@
     name: 'Music',
     data () {
       return {
-        isPlay: true
+        isPlay: false
       }
     },
     methods: {
@@ -35,32 +35,29 @@
   }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   .audio-wrapper {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border-radius: 32px;
+    z-index: 9999 !important;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 
     .btn-audio-play {
-      position: absolute;
-      top: 25px;
-      right: 25px;
       background: url('../assets/images/pause.png') no-repeat center bottom;
       width: 64px;
       height: 64px;
-      z-index: 999;
       cursor: pointer;
       animation: btn-audio-rotate infinite 20s linear;
     }
 
     .btn-audio-pause {
-      position: absolute;
-      top: 25px;
-      right: 25px;
       background: url('../assets/images/play.png') no-repeat center bottom;
       width: 64px;
       height: 64px;
       cursor: pointer;
-      z-index: 999;
     }
   }
 

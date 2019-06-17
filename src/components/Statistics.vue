@@ -85,7 +85,7 @@
       }
 
       .image {
-        margin-top: 10vh;
+        margin-top: 8vh;
       }
     }
   }
