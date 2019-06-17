@@ -4,25 +4,22 @@
       <swiper id="swiperBox"
               :options="swiperOption"
               ref="mySwiper">
-        <!-- 第一页 -->
+        <!--简略情况-->
         <swiper-slide>
           <BriefInfo></BriefInfo>
         </swiper-slide>
-        <!-- 第二页 -->
+        <!--代码统计数据-->
         <swiper-slide>
           <Statistics></Statistics>
         </swiper-slide>
-        <!-- 第三页 -->
-        <swiper-slide class="swiper-slide3">
-          <div class="title" data-swiper-parallax="-100">Slide 3</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-300">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-              felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer
-              laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis
-              rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean
-              feugiat non eros quis feugiat.</p>
-          </div>
+        <!--生涯之最-->
+        <!--最长的类-->
+        <swiper-slide>
+          <LongestClass></LongestClass>
+        </swiper-slide>
+        <!--遇到的困难-->
+        <swiper-slide>
+          <Difficulties></Difficulties>
         </swiper-slide>
         <!--分页-->
         <template #pagination>
@@ -36,10 +33,12 @@
 <script>
   import BriefInfo from '@/components/BriefInfo'
   import Statistics from '@/components/Statistics'
+  import LongestClass from '@/components/LongestClass'
+  import Difficulties from '@/components/Difficulties'
 
   export default {
     name: 'Index',
-    components: { Statistics, BriefInfo },
+    components: { Difficulties, LongestClass, Statistics, BriefInfo },
     data () {
       return {
         swiperOption: {
@@ -100,9 +99,5 @@
 
   .swiper-wrapper {
     height: 100px;
-  }
-
-  .swiper-slide3 {
-    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
   }
 </style>

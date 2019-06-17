@@ -51,7 +51,6 @@
         averageScore: 0
       }
     },
-    computed: {},
     mounted () {
       this.total = 40
       this.javaTotal = 20
