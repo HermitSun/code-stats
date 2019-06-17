@@ -1,29 +1,4 @@
-# code-stats
+# 用于SEEC的统计数据展示页
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+其实没什么可说的，Swiper NB！
+前人栽树后人乘凉啊哈哈……
