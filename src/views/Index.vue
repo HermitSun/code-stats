@@ -5,20 +5,12 @@
               :options="swiperOption"
               ref="mySwiper">
         <!-- 第一页 -->
-        <swiper-slide class="swiper-slide1">
+        <swiper-slide>
           <BriefInfo></BriefInfo>
         </swiper-slide>
         <!-- 第二页 -->
-        <swiper-slide class="swiper-slide2">
-          <div class="title" data-swiper-parallax="-100">Slide 2</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-300">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-              felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer
-              laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis
-              rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean
-              feugiat non eros quis feugiat.</p>
-          </div>
+        <swiper-slide>
+          <Statistics></Statistics>
         </swiper-slide>
         <!-- 第三页 -->
         <swiper-slide class="swiper-slide3">
@@ -43,10 +35,11 @@
 
 <script>
   import BriefInfo from '@/components/BriefInfo'
+  import Statistics from '@/components/Statistics'
 
   export default {
     name: 'Index',
-    components: { BriefInfo },
+    components: { Statistics, BriefInfo },
     data () {
       return {
         swiperOption: {
@@ -107,14 +100,6 @@
 
   .swiper-wrapper {
     height: 100px;
-  }
-
-  /*.swiper-slide1 {*/
-  /*  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);*/
-  /*}*/
-
-  .swiper-slide2 {
-    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   }
 
   .swiper-slide3 {
