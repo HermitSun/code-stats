@@ -91,6 +91,10 @@
 </script>
 
 <style scoped lang="scss">
+  .swiper-container {
+    z-index: 0;
+  }
+
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s
   }

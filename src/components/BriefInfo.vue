@@ -74,7 +74,7 @@
       }
 
       .image {
-        margin-top: 8vh;
+        margin-top: 50px;
       }
     }
   }

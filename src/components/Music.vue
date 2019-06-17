@@ -38,26 +38,25 @@
 <style lang="scss">
   .audio-wrapper {
     position: absolute;
-    top: 25px;
-    right: 25px;
-    border-radius: 32px;
+    top: 20px;
+    right: 20px;
     z-index: 9999 !important;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 
     .btn-audio-play {
       background: url('../assets/images/pause.png') no-repeat center bottom;
-      width: 64px;
-      height: 64px;
+      width: 96px;
+      height: 96px;
       cursor: pointer;
+      /*box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);*/
       animation: btn-audio-rotate infinite 20s linear;
     }
 
     .btn-audio-pause {
       background: url('../assets/images/play.png') no-repeat center bottom;
-      width: 64px;
-      height: 64px;
+      width: 96px;
+      height: 96px;
       cursor: pointer;
+      /*box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);*/
     }
   }
 
