@@ -37,7 +37,9 @@ npm run build
 yarn run build
 ```
 
-打包后的静态资源在`~/code-stats/`里。注意，由于使用了前端路由，对部署的路径有要求，需要部署在`/code-stats`这个URL上，比如http://foo.bar/code-stats。配置可以修改。
+打包后的静态资源在`~/code-stats/`里。注意，由于使用了前端路由，对部署的路径有要求，需要部署在`/code-stats`这个URL上，比如http://foo.bar/code-stats。
+
+配置可以修改。
 
 ### 使用的技术
 
@@ -63,7 +65,7 @@ yarn run build
 
 ### 配置调整
 
-配置文件主要是`/vue.config.js`。主要可以调整的项目有：
+配置文件主要是`/vue.config.js`。主要可以调整的地方有：
 
 ```js
 // 生产环境部署的路径（也就是部署的URL）
